@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=1]
+[ext_resource path="res://items/sets/unarmed/unarmed_set_data.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/boxing_icon.png" type="Texture" id=4]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/3/boxing_3_effect.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/3/boxing_3_effect2.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/4/boxing_4_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/3/boxing_3_stats.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/garbobo-Boxer/content/weapons/melee/boxing/boxing.tscn" type="PackedScene" id=8]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "weapon_boxing_3"
+unlocked_by_default = true
+icon = ExtResource( 4 )
+name = "Boxing Glove"
+tier = 2
+value = 125
+effects = [ ExtResource( 5 ), ExtResource( 9 ) ]
+tracking_text = ""
+weapon_id = "weapon_boxing"
+type = 0
+sets = [ ExtResource( 3 ) ]
+scene = ExtResource( 8 )
+stats = ExtResource( 7 )
+upgrades_into = ExtResource( 6 )

@@ -1,0 +1,36 @@
+{
+	"name": "Boxer",
+	"namespace": "garbobo",
+	"version_number": "1.0.0",
+	"description": "Heavy-weight Champion Boxer with Gloves",
+	"website_url": "",
+	"dependencies": [
+		"Darkly77-Brotils",
+		"Darkly77-ContentLoader",
+		"dami-ModOptions"
+	],
+	"extra": {
+		"godot": {
+			"authors": ["Garbobo"],
+			"tags": [],
+			"description_rich": [],
+			"optional_dependencies": [],
+			"load_before": [],
+			"incompatibilities": [],
+			"compatible_mod_loader_version": ["1.0.0"],
+			"compatible_game_version": ["1.0.1.3"],
+			"config_schema": {
+				"title": "Boxer Settings",
+				"description": "Config for Boxer",
+				"type" : "object",
+				"properties" : {
+					"OPT_ENABLE_BOXER" : {
+						"type": "boolean",
+						"default": true,
+						"tooltip": "Toggle Boxer Mod On/Off.\nPrior to game start, On/Off takes effect immediately, otherwise requires restart.\n'On' makes Boxer and Boxing Gloves available.\n'Off' hides (locks) both."
+					}
+				},
+			}
+		}
+	}
+}
